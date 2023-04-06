@@ -6,10 +6,15 @@ margin: 0px;}
 html
 {font-size: 62.5%;
 font-family: 'Open Sans', sans-serif;
-scroll-behavior: smooth;}
+scroll-behavior: smooth;
+transition: 500ms;}
 
 body
-{background-color: rgb(214, 214, 214);}
+{background-color: rgb(214, 214, 214);
+transition: 500ms;}
+
+input
+{display: none;}
 
 header
 {width: 100%;
@@ -25,6 +30,14 @@ padding-left: 150px;
 font-size: 3rem;}
 
 #moon-icon
+{position: absolute;
+width: 50px;
+height: 50px;
+right: 120px;
+top: 25px;
+display: none;}
+
+#sun-icon
 {position: absolute;
 width: 50px;
 height: 50px;
@@ -59,11 +72,18 @@ margin: 0 auto;}
 {width: 50%;
 height: 100%;}
 
-#vans-logo
+#vans-logo-ligth
 {width: 60%;
 height: auto;
 margin: 40px;
 margin-top: 50px;}
+
+#vans-logo-dark
+{width: 60%;
+height: auto;
+margin: 40px;
+margin-top: 50px;
+display: none;}
 
 #tenis
 {position: absolute;
@@ -110,3 +130,31 @@ background-color: rgb(58, 58, 58);}
 
 
 
+/*tema dark*/
+
+.dark, .dark header
+{background-color: rgb(17, 17, 21);
+color: white;}
+
+.dark section
+{background-color: rgb(34, 34, 34);}
+
+.dark #sun-icon
+{display: none;}
+
+.dark #moon-icon
+{display: block;}
+
+.dark #vans-logo-ligth
+{display: none;}
+
+.dark #vans-logo-dark
+{display: block;}
+
+.dark #tenis
+{margin-top: -105px;}
+
+.dark .comprar, .dark button
+{background-color: gray;
+color: black;
+font-weight: bold;}

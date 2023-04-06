@@ -1,8 +1,17 @@
 
-const moon = document.querySelector('#moon-icon'); 
+const mudarTema = document.querySelector('#dark-theme'); 
 
-moon.addEventListener('click', () => {
+function darkMode () {
 
-        moon.src = './imgs/solar.png'; 
+        document.body.classList.toggle('dark'); 
 
-})
+}
+
+mudarTema.addEventListener("click", () => {
+      
+        darkMode();
+
+}); 
+
+
+

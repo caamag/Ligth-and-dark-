@@ -19,6 +19,12 @@
     right: 15px;
     top: 8px;}
 
+    #sun-icon
+    {width: 40px;
+    height: 40px;
+    right: 15px;
+    top: 8px;}
+
     .container
     {width: 100%;
     height: 65vh;
@@ -37,9 +43,15 @@
     .produto
     {text-align: center;}
 
-    #vans-logo
+    #vans-logo-ligth
     {width: 70%;
     margin: 0px;
+    margin-top: 50px;}
+
+    #vans-logo-dark
+    {width: 70%;
+    margin: 0px;
+    margin-left: 15%;
     margin-top: 50px;}
 
     #tenis
@@ -65,5 +77,10 @@
 
     .comprar button
     {padding: 10px;}
+
+    /*tema dark*/
+
+    .dark section
+    {background-color: rgb(17, 17, 17);}
 
 }
